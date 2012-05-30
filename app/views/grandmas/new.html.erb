@@ -1,0 +1,9 @@
+<h1>Call Granny and tell her how you're doing?</h1>
+<%= flash[:notice]%>
+
+<%= form_tag grandmas_create_url do%>
+<%= label_tag :sentence%>
+<%= text_field_tag :sentence%></br>
+
+<%= submit_tag "Talk to Granny"%>
+<%end%>
